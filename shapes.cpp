@@ -30,8 +30,3 @@ double Circle::area() const
 {
 	return radius * 3.14;
 }
-
-void printArea(const Shape& shape)
-{
-	std::cout << shape.area() << "\n";
-}
