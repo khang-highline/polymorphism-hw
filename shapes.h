@@ -1,31 +1,26 @@
 #include <iostream>
 
-class Shape {
-public:
-	virtual double area() const = 0;
-};
-
-class Rectangle : public Shape {
+class Rectangle {
 public:
 	Rectangle(double width, double height);
-	double area() const override;
+	double area() const;
 private:
 	double width;
 	double height;
 };
 
-class Square : public Shape {
+class Square {
 public:
 	Square(double side);
-	double area() const override;
+	double area() const;
 private:
 	double side;
 };
 
-class Circle : public Shape {
+class Circle {
 public:
 	Circle(double radius);
-	double area() const override;
+	double area() const;
 private:
 	double radius;
 };
